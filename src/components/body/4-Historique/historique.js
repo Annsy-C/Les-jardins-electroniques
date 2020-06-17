@@ -20,10 +20,10 @@ function Historique (props) {
                 <p>Le potager nait en Juin 2018 lorsque les associations Eceborg et NOISE contactent les services généraux et l’administration pour leur présenter le projet. S’en suit une visite du toit comme vous pouvez l’admirer à son origine.</p>
                 <div className="columns">
                   <div className="column">
-                    <img src="/images/photos_potager/1.jpg" alt="débuts du potager"/>
+                    <img src="" alt="débuts du potager"/>
                   </div>
                   <div className="column">
-                    <img src="/images/photos_potager/2.jpg" alt="débuts du potager"/>
+                    <img src="" alt="débuts du potager"/>
                   </div>
                 </div>
               </li>
@@ -33,10 +33,10 @@ function Historique (props) {
                 <p>Découvrez l’association Veni Verdi <a href="https://www.veniverdi.fr/">ici</a>.</p>
                 <div className="columns">
                   <div className="column">
-                    <img src="/images/photos_potager/3.jpg" alt="Visite"/>
+                    <img src="" alt="Visite"/>
                   </div>
                   <div className="column">
-                    <img src="/images/photos_potager/4.jpg" alt="Visite"/>
+                    <img src="" alt="Visite"/>
                   </div>
                 </div>
               </li>
@@ -45,10 +45,10 @@ function Historique (props) {
                 <p>Le projet démarre officiellement avec la livraison de deux tonnes de terres à monter sur le toit et l’installation de plusieurs carrés potager. Nous y plantons des choux, salades et légumes d’hiver.</p>
                 <div className="columns">
                   <div className="column">
-                    <img src="/images/photos_potager/5.jpg" alt="Livraison"/>
+                    <img src="" alt="Livraison"/>
                   </div>
                   <div className="column">
-                    <img src="/images/photos_potager/6.jpg" alt="Livraison"/>
+                    <img src="" alt="Livraison"/>
                   </div>
                 </div>
               </li>

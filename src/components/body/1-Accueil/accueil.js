@@ -17,8 +17,7 @@ function Accueil (props) {
                     <img src="/images/photos_potager/1.jpg" alt="potager de l'ECE"/>
                     <div className="columns">
                         <div className="column">
-                        {/* TODO: remplacer le logo par la version jpg ou png (sinon ne fonctionne pas) */}
-                            <img src="/images/logo_ECEBORG.ai" alt="logo ECEBORG"/>
+                            <img src="/images/baniere_ECEBORG.jpeg" alt="baniere ECEBORG"/>
                         </div>
                         <div className="column">
                             <img src="/images/logo_ECE.jpeg" alt="logo ECE"/>
