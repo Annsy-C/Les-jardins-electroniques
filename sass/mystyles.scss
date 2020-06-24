@@ -6,8 +6,19 @@
 }
 $family-secondary: "Courgette";
 
-$primary: hsla(150, 71%, 52%, 0.52);
-$info: hsla(150, 78%, 52%, 0.52);
+$primary: hsla(116, 34%, 47%, 1);
+$light: hsla(150, 78%, 52%, 0.52);
+$info: rgba(34, 139, 34, 0.52);
 $hero-body-padding: 1rem 1rem;
+
+.justified-content {
+    text-align: justify;
+}
+
+.centered-content {
+    text-align: center;
+}
+
+$icon-dimensions-large: 7rem;
 
 @import "../node_modules/bulma/bulma.sass";

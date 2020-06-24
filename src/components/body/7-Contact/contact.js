@@ -16,22 +16,9 @@ function Contact (props) {
           </div>
         </div>
       </section> 
-      <section className="section">
+      <section className="section has-background-light">
         <div className="container">
           <content className="content">
-            <div className="columns">
-              {/* TODO: informations à compléter */}
-              <div className="column">
-                <img src="/images/logo_ECEBORG.jpeg" alt="logo ECEBORG"/>
-                <p> ECEBORG</p>
-                <p>+ 33 6 60 91 27 18</p>
-              </div>
-              <div className="column">
-                <img src="/images/logo_NOISE.jpeg" alt="logo NOISE"/>
-                <p>NOISE ECE</p>
-              </div>
-            </div>
-            <div className="has-background-info">
               <div className="columns">
                 <div className="column">
                   <div className="field">
@@ -61,10 +48,10 @@ function Contact (props) {
                       />
                     </div>
                   </div>
-                  <div class="field">
-                    <label class="label">Message</label>
-                    <div class="control">
-                      <textarea class="textarea" placeholder="Textarea"></textarea>
+                  <div className="field">
+                    <label className="label">Message</label>
+                    <div className="control">
+                      <textarea className="textarea" placeholder="Textarea"></textarea>
                     </div>
                   </div>
                 </div>
@@ -79,7 +66,6 @@ function Contact (props) {
                   <button className="button is-link is-light">Annuler</button>
                 </div>
               </div>
-            </div>
           </content>
         </div>
       </section>

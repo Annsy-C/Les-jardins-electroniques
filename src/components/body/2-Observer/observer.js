@@ -12,7 +12,7 @@ function Observer (props) {
       </section>
       <section className="section">
             <div className="container">
-                <div class="columns">
+                <div className="columns">
                   {/* TODO : intégrer le Livestream */}
                   <div className="column">
                     <img src="/images/photos_potager/2.jpg" alt="photo du potager"/>

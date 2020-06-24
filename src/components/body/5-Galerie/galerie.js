@@ -10,7 +10,7 @@ function Galerie (props) {
           </div>
         </div>
       </section> 
-      <section className="section">
+      <section className="section has-background-light">
         <div className="container">
           <content className="content">
             <p>(En cours d'élaboration)</p>

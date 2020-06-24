@@ -1,12 +1,14 @@
 import React from "react";
 
-function NavBar (props) {
-    return(
-    <React.Fragment id="homepage_navbar">
+function NavBar ({ sticky }) {
+  console.log({sticky});
+
+  return(
+    <div id="homepage_navbar">
       {/* TODO : fixer la navbar en haut de l'ecran et rajouter les href (ou autre) des éléments */}
-      <nav className="navbar" role="navigation" aria-label="main navigation">
+      <nav className={(sticky ? "navbar" : "navbar is-fixed-top") + " is-primary"} role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-          <a className="navbar-item" href="">
+          <a className="navbar-item is-family-secondary">
             Accueil
           </a>
 
@@ -17,30 +19,30 @@ function NavBar (props) {
           </a>
         </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
+        <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-start">
-            <a className="navbar-item">
+            <a className="navbar-item is-family-secondary">
               Observer
             </a>
-            <a className="navbar-item">
+            <a className="navbar-item is-family-secondary">
               Découvrir
             </a>
-            <a className="navbar-item">
+            <a className="navbar-item is-family-secondary">
               Historique
             </a>
-            <a className="navbar-item">
+            <a className="navbar-item is-family-secondary">
               Galerie
             </a>
-            <a className="navbar-item">
+            <a className="navbar-item is-family-secondary">
               Nous aider
             </a>
-            <a className="navbar-item">
+            <a className="navbar-item is-family-secondary">
               Contact
             </a>
           </div>
         </div>
       </nav>
-    </React.Fragment>
+    </div>
     );
   }
 
