@@ -1,8 +1,8 @@
 import React from "react";
 
-function Galerie (props) {
+function Galerie ({ reference }) {
     return(
-    <>
+    <div ref={ reference }>
       <section className="hero is-primary">
         <div className="hero-body">
           <div className="container">
@@ -17,7 +17,7 @@ function Galerie (props) {
           </content>
         </div>
       </section>
-    </>
+    </div>
     );
   }
 

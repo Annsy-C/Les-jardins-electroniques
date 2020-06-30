@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { InView } from 'react-intersection-observer';
 import Hero from './components/header/hero/hero';
 import NavBar from './components/header/nav-bar/nav-bar';
@@ -13,20 +13,27 @@ import Footer from './components/footer/footer'
 
 function App() {
   const [isInView, setIsInView] = useState(true);
+  const accueilRef = useRef(null);
+  const observerRef = useRef(null);
+  const decouvrirRef = useRef(null);
+  const historiqueRef = useRef(null);
+  const galerieRef = useRef(null);
+  const nousAiderRef = useRef(null);
+  const contactRef = useRef(null);
   return (
       <>
         <InView as="div" onChange={(inView, entry) => setIsInView(inView)}>
-          <Hero></Hero>
+          <Hero reference={accueilRef}></Hero>
         </InView>
-        <NavBar sticky={isInView}></NavBar>
+        <NavBar sticky={isInView} divRefs={{accueilRef, observerRef, decouvrirRef, historiqueRef, galerieRef, nousAiderRef, contactRef}} ></NavBar>
 
         <Accueil></Accueil>
-        <Observer></Observer>
-        <Decouvrir></Decouvrir>
-        <Historique></Historique>
-        <Galerie></Galerie>
-        <NousAider></NousAider>
-        <Contact></Contact>
+        <Observer reference={observerRef}></Observer>
+        <Decouvrir reference={decouvrirRef}></Decouvrir>
+        <Historique reference={historiqueRef}></Historique>
+        <Galerie reference={galerieRef}></Galerie>
+        <NousAider reference={nousAiderRef}></NousAider>
+        <Contact reference={contactRef}></Contact>
 
         <Footer></Footer>
       </>

@@ -1,8 +1,8 @@
 import React from "react";
 
-function Hero (props) {
+function Hero ({ reference }) {
     return(
-    <div id="homepage_hero">
+    <div id="homepage_hero" ref={ reference }>
         <section className="hero is-primary">
             <div className="hero-body">
                 <div className="container">
@@ -22,6 +22,7 @@ function Hero (props) {
                 </div>
             </div>
         </section>
+        <div id="endHero"></div>
     </div>
     );
   }

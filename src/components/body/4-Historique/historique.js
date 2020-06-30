@@ -1,8 +1,8 @@
 import React from "react";
 
-function Historique (props) {
+function Historique ({ reference }) {
     return(
-    <>
+    <div ref={reference}>
       <section className="hero is-primary">
         <div className="hero-body">
           <div className="container">
@@ -93,7 +93,7 @@ function Historique (props) {
           </content>
         </div>
       </section>
-    </>
+    </div>
     );
   }
 

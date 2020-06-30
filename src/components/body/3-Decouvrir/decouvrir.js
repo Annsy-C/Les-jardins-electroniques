@@ -2,9 +2,9 @@ import React from "react";
 import { Card, CardContent, CardImage, CardTitle, CardParagraph } from "../../elements/card";
 import { Box, BoxContent, BoxImage, BoxTitle, BoxParagraph} from "../../elements/box";
 
-function Decouvrir (props) {
+function Decouvrir ({ reference }) {
     return(
-      <>
+      <div ref={reference}>
         <section className="hero is-primary">
             <div className="hero-body">
                 <div className="container">
@@ -206,7 +206,7 @@ function Decouvrir (props) {
               </section>
           </div>
         </section>
-    </>
+    </div>
     );
   }
 

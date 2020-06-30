@@ -1,9 +1,9 @@
 import React from "react";
 import { Card, CardContent, CardTitle, CardParagraph, CardIcon } from "../../elements/card";
 
-function NousAider (props) {
-    return(
-      <>
+function NousAider ({ reference }) {
+  return(
+    <div ref={reference}>
       <section className="hero is-primary">
         <div className="hero-body">
           <div className="container">
@@ -60,7 +60,7 @@ function NousAider (props) {
           </content>
         </div>
       </section>
-    </>
+    </div>
     );
   }
 

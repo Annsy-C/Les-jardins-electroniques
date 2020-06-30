@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import InputEmail from "./input_email";
 
-function Contact (props) {
+function Contact ({ reference }) {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [subject, setSubject] = useState("");
     const [textArea, setTextArea] = useState("");
 
     return (
-    <>
+    <div ref={ reference }>
       <section className="hero is-primary">
         <div className="hero-body">
           <div className="container">
@@ -51,7 +51,12 @@ function Contact (props) {
                   <div className="field">
                     <label className="label">Message</label>
                     <div className="control">
-                      <textarea className="textarea" placeholder="Textarea"></textarea>
+                      <textarea 
+                        className="textarea" 
+                        placeholder="TextArea"
+                        value={textArea} 
+                        onChange={(event) => setTextArea(event.target.value)} 
+                        ></textarea>
                     </div>
                   </div>
                 </div>
@@ -69,7 +74,7 @@ function Contact (props) {
           </content>
         </div>
       </section>
-    </>
+    </div>
     );
   }
 
