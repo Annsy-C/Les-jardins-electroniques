@@ -16,7 +16,7 @@ function Contact ({ reference }) {
           </div>
         </div>
       </section> 
-      <section className="section has-background-light">
+      <section className="section">
         <div className="container">
           <content className="content">
               <div className="columns">

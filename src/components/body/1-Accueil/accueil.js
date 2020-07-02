@@ -1,16 +1,9 @@
 import React from "react";
 
-function Accueil (props) {
+function Accueil ({ reference }) {
     return(
-    <div id="accueil_part">
-        {/*<section className="hero is-primary">
-            <div className="hero-body">
-                <div className="container">
-                    <h1 className="title is-family-secondary">Accueil</h1>
-                </div>
-            </div>
-        </section>*/}
-        <section className="section has-background-light">
+    <div ref={reference}>
+        <section className="section">
             <div className="container">
                 <content className="content">
                     <h2>Bienvenue sur le site du potager urbain de l'ECE</h2>

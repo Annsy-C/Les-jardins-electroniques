@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react';
-import { InView } from 'react-intersection-observer';
-import Hero from './components/header/hero/hero';
+import React, { /* useState,*/ useRef } from 'react';
+/* import { InView } from 'react-intersection-observer';
+import Hero from './components/header/hero/hero'; */
 import NavBar from './components/header/nav-bar/nav-bar';
 import Accueil from './components/body/1-Accueil/accueil';
 import Observer from './components/body/2-Observer/observer';
@@ -12,7 +12,7 @@ import Contact from './components/body/7-Contact/contact';
 import Footer from './components/footer/footer'
 
 function App() {
-  const [isInView, setIsInView] = useState(true);
+  /* const [isInView, setIsInView] = useState(true); */
   const accueilRef = useRef(null);
   const observerRef = useRef(null);
   const decouvrirRef = useRef(null);
@@ -22,12 +22,12 @@ function App() {
   const contactRef = useRef(null);
   return (
       <>
-        <InView as="div" onChange={(inView, entry) => setIsInView(inView)}>
+        {/* <InView as="div" onChange={(inView, entry) => setIsInView(inView)}>
           <Hero reference={accueilRef}></Hero>
-        </InView>
-        <NavBar sticky={isInView} divRefs={{accueilRef, observerRef, decouvrirRef, historiqueRef, galerieRef, nousAiderRef, contactRef}} ></NavBar>
+          </InView> */}
+        <NavBar /* sticky={isInView} */ divRefs={{accueilRef, observerRef, decouvrirRef, historiqueRef, galerieRef, nousAiderRef, contactRef}} ></NavBar>
 
-        <Accueil></Accueil>
+        <Accueil reference={accueilRef}></Accueil>
         <Observer reference={observerRef}></Observer>
         <Decouvrir reference={decouvrirRef}></Decouvrir>
         <Historique reference={historiqueRef}></Historique>

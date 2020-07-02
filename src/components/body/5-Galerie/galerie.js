@@ -10,7 +10,7 @@ function Galerie ({ reference }) {
           </div>
         </div>
       </section> 
-      <section className="section has-background-light">
+      <section className="section">
         <div className="container">
           <content className="content">
             <p>(En cours d'élaboration)</p>

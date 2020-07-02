@@ -12,7 +12,7 @@ function Decouvrir ({ reference }) {
                 </div>
             </div>
         </section>
-        <section className="section has-background-light">
+        <section className="section">
           <div className="container">
             <content className="content">
               <h2>L'Agriculture urbaine, comment? Pourquoi? Pour qui?</h2>
@@ -133,8 +133,10 @@ function Decouvrir ({ reference }) {
                   </Box>
                 </section>
               </section>
-              <section>
-                <h2>Les projets en cours:</h2>
+              <section className="section">
+                <div className="content">
+                  <h2>Les projets en cours:</h2>
+                </div>
                 <div className="columns">
                   {/* TODO: Rajouter les liens (href) dans les balises <a> en fin de paragraphe vers les éléments cités
                       + Trouver une nouvelle image pour l'arroseur automatique*/}
