@@ -19,6 +19,11 @@ $hero-body-padding: 1rem 1rem;
     text-align: center;
 }
 
+.collapsible-content {
+    transition: max-height 1s ease-out 0s;
+    overflow: hidden;
+}
+
 $icon-dimensions-large: 7rem;
 
 @import "../node_modules/bulma/bulma.sass";

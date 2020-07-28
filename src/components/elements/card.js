@@ -12,7 +12,7 @@ function CardImage({ src, alt }) {
 
 function CardTitle({ title, subtitle }) {
     return (
-        <div className="content">
+        <div className="content has-text-centered">
             <p className="title is-4">{title}</p>
             <p className="subtitle is-6">{subtitle}</p>
         </div>
@@ -21,7 +21,7 @@ function CardTitle({ title, subtitle }) {
 
 function CardParagraph({ children }) {
     return (
-        <div className="content justified-content">
+    <div className="content justified-content">
             { children }
         </div>
     );
@@ -29,7 +29,7 @@ function CardParagraph({ children }) {
 
 function CardContent({ children }) {
     return (
-        <div className="card-content">
+        <div className="card-content collapsible-content">
             {children}
         </div>
     );

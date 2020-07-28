@@ -8,7 +8,7 @@ function Footer(props) {
           <div className="columns">
             <div className="column is-4">
               <Box>
-                <BoxImage src="/images/logo_ECEBORG.jpeg" alt="logo ECEBORG" size="is-64x64"/>
+                <BoxImage src="/images/logos/logo_ECEBORG.jpeg" alt="logo ECEBORG" size="is-64x64"/>
                 <BoxContent>
                   <BoxTitle title="ECEBORG" />
                   <BoxParagraph>
@@ -19,7 +19,7 @@ function Footer(props) {
             </div>
             <div className="column is-4">
               <Box>
-                <BoxImage src="/images/logo_NOISE.jpeg" alt="logo NOISE" size="is-64x64"/>
+                <BoxImage src="/images/logos/logo_NOISE.jpeg" alt="logo NOISE" size="is-64x64"/>
                 <BoxContent>
                   <BoxTitle title="NOISE ECE" />
                   <BoxParagraph>

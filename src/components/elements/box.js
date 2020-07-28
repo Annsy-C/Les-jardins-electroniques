@@ -10,14 +10,6 @@ function Box({ children }) {
     );
 }
 
-function BoxImage({ size = "", src, alt }) {
-    return (
-        <figure className={"image " + size}>
-            <img src={src} alt={alt} />
-        </figure>
-    );
-}
-
 function BoxContent({ children }) {
     return(
         <div className="column">
@@ -34,6 +26,25 @@ function BoxTitle({ title }) {
     );
 }
 
+function BoxImage({ size = "", src, alt }) {
+    return (
+        <figure className={"image " + size}>
+            <img src={src} alt={alt} />
+        </figure>
+    );
+}
+
+function BoxIcon({ icon }) {
+    return(
+        <div className="content centered-content">
+            <span className="icon">
+                    <i className={`fas ${icon} fa-3x is-flex`}></i>
+            </span>
+        </div>
+
+    );
+}
+
 function BoxParagraph({ children }) {
     return(
         <div className="content justified-content">
@@ -42,5 +53,5 @@ function BoxParagraph({ children }) {
     );
 }
 
-export { Box, BoxContent, BoxImage, BoxTitle, BoxParagraph, };
+export { Box, BoxContent, BoxTitle, BoxImage, BoxIcon, BoxParagraph, };
 export default Box;

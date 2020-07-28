@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const scrollToRef = (ref, sticky) => window.scrollTo({
-  top: (sticky ? ref.current.offsetTop - 100 : ref.current.offsetTop - 50),
+  top: ref.current.offsetTop - 50,
   behavior: 'smooth'
 });
 
@@ -13,10 +13,9 @@ function NavBar ({ sticky, divRefs }) {
   }
   return(
     <div id="homepage_navbar">
-      {/* TODO : fixer la navbar en haut de l'ecran et rajouter les href (ou autre) des éléments */}
       <nav className={(sticky ? "navbar" : "navbar is-fixed-top") + " is-primary"} role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-          <a className="navbar-item is-family-secondary" onClick={() => scrollToRef(accueilRef, sticky)}>
+          <a className="navbar-item is-family-secondary is-size-4" onClick={() => scrollToRef(accueilRef, sticky)}>
             Accueil
           </a>
           <a 
@@ -35,22 +34,22 @@ function NavBar ({ sticky, divRefs }) {
 
         <div id="navbarBasicExample" className={"navbar-menu" + (isMenuOpen ? " is-active" : "")}>
           <div className="navbar-start">
-            <a className="navbar-item is-family-secondary" onClick={() => scrollToRef(observerRef, sticky)}>
+            <a className="navbar-item is-family-secondary is-size-4" onClick={() => scrollToRef(observerRef, sticky)}>
               Observer
             </a>
-            <a className="navbar-item is-family-secondary" onClick={() => scrollToRef(decouvrirRef, sticky)}>
+            <a className="navbar-item is-family-secondary is-size-4" onClick={() => scrollToRef(decouvrirRef, sticky)}>
               Découvrir
             </a>
-            <a className="navbar-item is-family-secondary" onClick={() => scrollToRef(historiqueRef, sticky)}>
+            <a className="navbar-item is-family-secondary is-size-4" onClick={() => scrollToRef(historiqueRef, sticky)}>
               Historique
             </a>
-            <a className="navbar-item is-family-secondary" onClick={() => scrollToRef(galerieRef, sticky)}>
+            <a className="navbar-item is-family-secondary is-size-4" onClick={() => scrollToRef(galerieRef, sticky)}>
               Galerie
             </a>
-            <a className="navbar-item is-family-secondary" onClick={() => scrollToRef(nousAiderRef, sticky)}>
+            <a className="navbar-item is-family-secondary is-size-4" onClick={() => scrollToRef(nousAiderRef, sticky)}>
               Nous aider
             </a>
-            <a className="navbar-item is-family-secondary" onClick={() => scrollToRef(contactRef, sticky)}>
+            <a className="navbar-item is-family-secondary is-size-4" onClick={() => scrollToRef(contactRef, sticky)}>
               Contact
             </a>
           </div>

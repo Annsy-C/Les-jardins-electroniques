@@ -15,29 +15,22 @@ function Decouvrir ({ reference }) {
         <section className="section">
           <div className="container">
             <content className="content">
-              <h2>L'Agriculture urbaine, comment? Pourquoi? Pour qui?</h2>
-              <p>En 2050, la population mondiale dépassera les 9 Milliards d’êtres humains et plus de 80 % d’entre eux vivront dans une zone urbaine. Dans ce contexte, produire de la nourriture en ville devient un enjeu crucial pour la qualité de vie des citoyens. De nombreuses agglomérations à travers le monde développent des solutions pour la mise en place de fermes urbaines comme la ville de Paris par exemple qui s’est fixé comme objectif de créer plus de 30 Hectares d’espace agricole d’ici 2020.</p> 
+              <h2 className="title is-family-secondary has-text-centered">L'Agriculture urbaine, comment? Pourquoi? Pour qui?</h2>
               <br />
             </content>
-            <div className="columns">
-              <div className="column">
-                <Box>
-                  <BoxContent>
-                    <BoxImage src="/images/photos_potager/3.jpg" alt="potager parisien vue Notre-Dame" size="is-5by3"/>
-                  </BoxContent>
-                </Box>
-                </div>
-                <div className="column">
-                  <Box>
-                    <BoxContent>
-                      <BoxImage src="/images/photos_potager/3bis.jpg" alt="potager parisien coucher de soleil" size="is-5by3" />
-                    </BoxContent>
-                  </Box>
-                  </div>
-              </div>
-            <section>
+            <Box>
+              <BoxContent>
+                <BoxImage src="/images/photos_potager/3.jpg" alt="potager parisien vue Notre-Dame" size="is-5by3"/>
+              </BoxContent>
+              <BoxContent>
+                <BoxParagraph>
+                <p>En 2050, la population mondiale dépassera les 9 Milliards d’êtres humains et plus de 80 % d’entre eux vivront dans une zone urbaine. Dans ce contexte, produire de la nourriture en ville devient un enjeu crucial pour la qualité de vie des citoyens. De nombreuses agglomérations à travers le monde développent des solutions pour la mise en place de fermes urbaines comme la ville de Paris par exemple qui s’est fixé comme objectif de créer plus de 30 Hectares d’espace agricole d’ici 2020.</p> 
+                </BoxParagraph>
+              </BoxContent>
+            </Box>
+            <section className="section">
               <div className="content">
-                <h2>L’agriculture urbaine offre une multitude d’améliorations sociales et environnementales à tous les niveaux :</h2>
+                <h2 className="title is-family-secondary has-text-centered">L’agriculture urbaine offre une multitude d’améliorations sociales et environnementales à tous les niveaux :</h2>
               </div>
               <div className="columns">
                 <div className="column">
@@ -81,16 +74,20 @@ function Decouvrir ({ reference }) {
                   </div>
                 </div>
               </section>
-              <section>
+              <section className="section">
                 <div className="content">
-                  <br />
-                  <h2>L'ECE participe à cette révolution!</h2>
+                  <h2 className="title is-family-secondary has-text-centered">L'ECE participe à cette révolution!</h2>
                   <p>Consciente des enjeux majeurs de l’agriculture urbaine, l’ECE Paris.Lyon a décidé de mettre en place un potager sur le toit de son campus en octobre 2018. C’est un projet nouveau, colossal, et surtout un peu fou issu du partenariat entre deux associations étudiantes de l’école.</p>
                 </div>
                 <div className="columns">
                   <div className="column">
                     <Card>
                       <CardContent>
+                        {/*
+                        <figure className="image is-128x128">
+                          <img src="/images/logos/baniere_ECEBORG.jpeg" alt="baniere ECEBORG" className="is-rounded" />
+                        </figure>
+                        */}
                         <CardTitle title="ECEBORG" subtitle="association de robotique et d'électronique" />
                       </CardContent>
                       {/* TODO : attention, le site Eceborg ne s'ouvre pas forcément sur tout les navigateurs*/}
@@ -102,13 +99,13 @@ function Decouvrir ({ reference }) {
                       <CardContent>
                         <CardTitle title="NOISE ECE" subtitle="Nouvel observatoire des innovations sociales et environnementales"/>
                       </CardContent>
-                    <a href="https://www.ece.fr/lp/?esl-k=Google|ng|c114219375621|me|kece%20paris|p|t|dc|a9779665701|g189711981&lead_source=SEA_google&c_last_source=SEA_google&utm_campaign=ece_branding_google&gclid=EAIaIQobChMIm-_fiJP66QIVje5RCh03aAOdEAAYASAAEgIMnfD_BwE"><CardImage src="/images/photos_potager/8.jpg" alt="NOISE ECE"/></a>
+                    <a href="https://the-noise.org"><CardImage src="/images/photos_potager/8.jpg" alt="NOISE ECE"/></a>
                     </Card>
                   </div>
                 </div>
-                <section className="content">
+                <div className="content">
                   <p>Ce regroupement de jeunes femmes et hommes en manque de verdure a décidé d’installer un potager sur le toit de l'un des bâtiments du campus Eiffel afin d’apporter l’agriculture dans la ville et de s’impliquer concrètement dans la transition verte de notre société.</p>
-                  <h2>La volonté de ces associations est double :</h2>
+                  <h2 className="title is-family-secondary has-text-centered">La volonté de ces associations est double :</h2>
                   <Box>
                     <BoxContent>
                       <BoxTitle title="Proposer un espace de pratique et de sensibilisation :"/>
@@ -131,11 +128,11 @@ function Decouvrir ({ reference }) {
                       </BoxParagraph>
                     </BoxContent>
                   </Box>
-                </section>
+                </div>
               </section>
               <section className="section">
                 <div className="content">
-                  <h2>Les projets en cours:</h2>
+                  <h2 className="title is-family-secondary has-text-centered">Les projets en cours:</h2>
                 </div>
                 <div className="columns">
                   {/* TODO: Rajouter les liens (href) dans les balises <a> en fin de paragraphe vers les éléments cités
@@ -147,11 +144,11 @@ function Decouvrir ({ reference }) {
                       </CardContent>
                       <CardImage src="/images/photos_potager/11.PNG" alt="capteur" /> 
                       <CardContent>                   
-                      <CardParagraph>
-                        <p>La première étape du projet a été de mettre en place des systèmes de surveillance efficaces de l’écosystème du potager. Pour cela nous avons mis en place différents capteurs et une caméra afin de récolter un maximum de données environnementales pour analyser au mieux les conditions climatiques du potager.</p>
-                      </CardParagraph>
+                        <CardParagraph>
+                          <p>La première étape du projet a été de mettre en place des systèmes de surveillance efficaces de l’écosystème du potager. Pour cela nous avons mis en place différents capteurs et une caméra afin de récolter un maximum de données environnementales pour analyser au mieux les conditions climatiques du potager.</p>
+                        </CardParagraph>
                         <p>
-                          Découvrez le système de capteur <a href="">ici</a>.
+                        Découvrez le système de capteur <a href="http://github.com/ECEBORG">ici</a>.
                         </p>
                       </CardContent>
                     </Card>
@@ -167,7 +164,7 @@ function Decouvrir ({ reference }) {
                       <p>Avoir un potager sur toit pose des contraintes supplémentaires au niveau de l’arrosage. En effet la faible profondeur du sol et la conception du toit adaptée à une évacuation rapide des eaux de pluies fait que la terre retient très peu l’eau. Combiné à des vents importants dues à notre positionnement au cinquième étage et aux courants d’airs provenant des grandes tours de Beaugrenelle avoisinantes, la terre a une tendance à s‘assécher très vite. Pour pallier ce problème, il faut donc un arrosage intelligent capable de distribuer des petites quantité d’eau localisées tout au long de la journée plutôt qu’une grande quantité à un instant t. Pour ce faire nous avons créé un système de boitier contenant une électrovanne et un système de contôle à distance combiné à un réseau de tuyau et d’aspergeurs parcourant le potager. Cela nous permet non seulement de réaliser ces petits arrosages continus mais également de réaliser un arrosage différentiel en fonction du type de culture afin d’optimiser notre consommation d’eau.</p>
                       </CardParagraph>
                         <p>
-                          Découvrez le système de capteur <a href="">ici</a>.
+                          Découvrez le système de capteur <a href="http://github.com/ECEBORG">ici</a>.
                         </p>
                       </CardContent>
                     </Card>
@@ -183,7 +180,7 @@ function Decouvrir ({ reference }) {
                       <p>Le projet AWR² ou Autonomous Weed Removal Roover est le premier robot agricole de l’association ECEBORG. Projet démarré en Décembre 2019, ce robot a pour but de parcourir notre potager, reconnaitre les plantes grâce à l’intelligence artificielle et désherber les mauvaises herbes de manière mécanique afin d’éviter l’usage de pesticides.  Même si l’aventure n’est encore qu’à ses débuts notre robot est déjà fonctionnel mécaniquement et rencontre un grand succès auprès des étudiants du campus. Nous souhaitons pérenniser l’ensemble des travaux produits en les partageant en open source pour permettre à un maximum de personnes de nous aider ainsi qu’une meilleur reprise du projet entre les différentes générations de l’ECE.</p>
                       </CardParagraph>
                         <p>
-                          Découvrez le projet AWR <a href="">ici</a>.
+                          Découvrez le projet AWR <a href="http://github.com/ECEBORG/AWR-">ici</a>.
                         </p>
                       </CardContent>
                     </Card>
@@ -199,7 +196,7 @@ function Decouvrir ({ reference }) {
                       <p>Farmbot est un projet open source de robot CNC pour le potager. Il s’agit d’un système de trois axes permettant de cultiver des carrés potagers allant jusqu’à 43,2m² de surface. C’est un des premiers projets de robotiques agricole et nous avons beaucoup d’admiration pour les concepteurs de farmbot. C’est pourquoi nous voulons construire nous-même notre propre farmbot pour tester en condition réel cette bête ! Pour instant nous sommes encore en recherche de financement pour ce projet.</p>
                       </CardParagraph>
                         <p>
-                          Découvrez Farmbot <a href="">ici</a>.
+                          Découvrez Farmbot <a href="http://farm.bot">ici</a>.
                         </p>
                       </CardContent>
                     </Card>
