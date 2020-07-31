@@ -46,9 +46,9 @@ function CardIcon({ icon }) {
     );
 }
 
-function Card({ children }) {
+function Card({ children , height=" heightMax"}) {
     return (
-        <div className="card">
+        <div className={"card" + height}>
             {children}
         </div>
     );

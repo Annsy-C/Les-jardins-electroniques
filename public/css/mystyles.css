@@ -2,6 +2,9 @@
   font-family: "Courgette";
   src: url(/fonts/Courgette-Regular.ttf) format("truetype"); }
 
+.heightMax {
+  height: 100%; }
+
 .justified-content {
   text-align: justify; }
 

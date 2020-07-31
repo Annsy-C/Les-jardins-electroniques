@@ -1,8 +1,8 @@
 import React from "react";
 
-function Box({ children }) {
+function Box({ children, height=" heightMax" }) {
     return (
-        <div className="box">
+        <div className={"box" + height}>
             <div className="columns">
                 {children}
             </div>

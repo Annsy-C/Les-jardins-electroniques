@@ -25,7 +25,7 @@ function Observer ({ reference }) {
           <div className="columns">
           {/* TODO : intégrer le Livestream */}
             <div className="column">
-              <Box>
+              <Box >
                 <BoxContent>
                   <BoxTitle title = "(LiveStream à venir)"/>
                   <BoxImage src="/images/photos_potager/2.jpg" alt="photo du potager" />
@@ -34,14 +34,14 @@ function Observer ({ reference }) {
             </div>
             <div className="column">
               <MeteoBox />
-              <Box>
+              <Box height="">
                 <BoxContent>
                   <BoxTitle title = "Météo du potager :"/>
                 </BoxContent>
               </Box>
               <div className="columns">
                 <div className="column is-4">
-                  <Box>
+                  <Box height="">
                     <BoxContent>
                       <BoxParagraph>
                         <p>Température</p>
@@ -58,7 +58,7 @@ function Observer ({ reference }) {
                   </Box>
                 </div>
                 <div className="column is-4">
-                  <Box>
+                  <Box height=""> 
                     <BoxContent>
                       <BoxParagraph>
                         <p>Humidité de l'air</p>
@@ -75,7 +75,7 @@ function Observer ({ reference }) {
                   </Box>
                 </div>
                 <div className="column is-4">
-                  <Box>
+                  <Box height="">
                     <BoxContent>
                       <BoxParagraph>
                         <p>Pluviométrie</p>
@@ -94,7 +94,7 @@ function Observer ({ reference }) {
               </div>
               <div className="columns">
                 <div className="column is-4">
-                  <Box>
+                  <Box height="">
                     <BoxContent>
                       <BoxParagraph>
                         <p>Vitesse du vent</p>
@@ -111,7 +111,7 @@ function Observer ({ reference }) {
                   </Box>
                 </div>
                 <div className="column is-4">
-                  <Box>
+                  <Box height="">
                     <BoxContent>
                       <BoxParagraph>
                         <p>Orientation du vent</p>
@@ -128,7 +128,7 @@ function Observer ({ reference }) {
                   </Box>
                 </div>
                 <div className="column is-4">
-                  <Box>
+                  <Box height="">
                     <BoxContent>
                       <BoxParagraph>
                         <p>Pression atmosphérique</p>

@@ -19,23 +19,23 @@ function MeteoBox () {
     }, [temperature, setTemperature]);
 
     return (
-        <Box>
+        <Box height="">
             <BoxContent>
                 <BoxTitle title="Météo Paris" />
                 <BoxImage src={icon} alt="icone météo" size="is-128x128"/>
             </BoxContent>
             <BoxContent>
-                <Box>
+                <Box height="">
                     <BoxParagraph>
                         <p>Température : {Math.round(temperature)} °C</p>
                     </BoxParagraph>
                 </Box>
-                <Box>
+                <Box height="">
                     <BoxParagraph>
                         <p>Actuellement : <br/>{meteo}</p>
                     </BoxParagraph>
                 </Box>
-                <Box>
+                <Box height="">
                     <BoxParagraph>
                         <p>Vitesse du vent : {vitesseVent} km/h</p>
                     </BoxParagraph>
