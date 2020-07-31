@@ -24,6 +24,15 @@ $hero-body-padding: 1rem 1rem;
     overflow: hidden;
 }
 
+.accueil-section {
+    background-size: cover;
+    min-height: 700px;
+}
+
+div#preload {
+    display: none;
+}
+
 $icon-dimensions-large: 7rem;
 
 @import "../node_modules/bulma/bulma.sass";

@@ -8,6 +8,17 @@
 .centered-content {
   text-align: center; }
 
+.collapsible-content {
+  transition: max-height 1s ease-out 0s;
+  overflow: hidden; }
+
+.accueil-section {
+  background-size: cover;
+  min-height: 700px; }
+
+div#preload {
+  display: none; }
+
 /*! bulma.io v0.9.0 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
