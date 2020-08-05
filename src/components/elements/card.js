@@ -1,12 +1,17 @@
 import React from "react";
+import { CardContext, CardContextProvider } from "./cardContext";
 
-function CardImage({ src, alt }) {
+function CardImage({ src, alt , hoverable=false }) {
+    let classNames="card-image";
+    if (hoverable) {
+        classNames +=" hoverable";
+    }
     return (
-        <div className="card-image">
-            <figure className="image is-4by3">
-                <img src={src} alt={alt}/>
-            </figure>
-        </div>
+            <div className={classNames}>
+                <figure className="image is-4by3">
+                    <img src={src} alt={alt}/>
+                </figure>
+            </div>
     );
 }
 
@@ -20,8 +25,16 @@ function CardTitle({ title, subtitle }) {
 }
 
 function CardParagraph({ children }) {
-    return (
-    <div className="content justified-content">
+
+    const { isOpen } = React.useContext(CardContext);
+    let classNames="content justified-content";
+
+    if (!isOpen) {
+        classNames += " is-hidden";
+    }    
+
+    return (        
+        <div className={classNames}>
             { children }
         </div>
     );
@@ -46,13 +59,40 @@ function CardIcon({ icon }) {
     );
 }
 
+function CardButton() {
+    const { isOpen, toggleIsOpen } = React.useContext(CardContext);
+    let classNameButtonUp = isOpen ?  "button is-primary is-light is-small is-fullwidth is-rounded" : "is-hidden";
+    let classNameButtonDown = isOpen ?  "is-hidden" : "button is-primary is-light is-small is-fullwidth is-rounded";
+
+    return(
+        <>
+            <button onClick={toggleIsOpen} className={classNameButtonUp}>
+                <div className="content centered-content">
+                    <span className="icon">
+                        <i className="fas fa-arrow-up is-flex"></i>
+                    </span>
+                </div>   
+            </button>
+            <button onClick={toggleIsOpen} className={classNameButtonDown}>
+                <div className="content centered-content">
+                    <span className="icon">
+                        <i className="fas fa-arrow-down is-flex"></i>
+                    </span>
+                </div>   
+            </button>
+        </>
+    )
+}
+
 function Card({ children , height=" heightMax"}) {
     return (
-        <div className={"card" + height}>
-            {children}
-        </div>
+        <CardContextProvider>
+            <div className={"card" + height}>
+                {children}
+            </div>
+        </CardContextProvider>
     );
 }
 
-export { Card, CardContent, CardImage, CardTitle, CardParagraph, CardIcon };
+export { Card, CardContent, CardImage, CardTitle, CardParagraph, CardIcon, CardButton };
 export default Card;

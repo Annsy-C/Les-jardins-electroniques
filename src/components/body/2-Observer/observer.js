@@ -34,14 +34,14 @@ function Observer ({ reference }) {
             </div>
             <div className="column">
               <MeteoBox />
-              <Box height="">
+              <Box height={false}>
                 <BoxContent>
                   <BoxTitle title = "Météo du potager :"/>
                 </BoxContent>
               </Box>
               <div className="columns">
                 <div className="column is-4">
-                  <Box height="">
+                  <Box height={false}>
                     <BoxContent>
                       <BoxParagraph>
                         <p>Température</p>
@@ -58,7 +58,7 @@ function Observer ({ reference }) {
                   </Box>
                 </div>
                 <div className="column is-4">
-                  <Box height=""> 
+                  <Box height={false}> 
                     <BoxContent>
                       <BoxParagraph>
                         <p>Humidité de l'air</p>
@@ -75,7 +75,7 @@ function Observer ({ reference }) {
                   </Box>
                 </div>
                 <div className="column is-4">
-                  <Box height="">
+                  <Box height={false}>
                     <BoxContent>
                       <BoxParagraph>
                         <p>Pluviométrie</p>
@@ -94,10 +94,10 @@ function Observer ({ reference }) {
               </div>
               <div className="columns">
                 <div className="column is-4">
-                  <Box height="">
+                  <Box height={false}>
                     <BoxContent>
                       <BoxParagraph>
-                        <p>Vitesse du vent</p>
+                        <p>Vitesse vent</p>
                       </BoxParagraph>
                     </BoxContent>
                     <BoxContent>
@@ -111,7 +111,7 @@ function Observer ({ reference }) {
                   </Box>
                 </div>
                 <div className="column is-4">
-                  <Box height="">
+                  <Box height={false}>
                     <BoxContent>
                       <BoxParagraph>
                         <p>Orientation du vent</p>
@@ -128,7 +128,7 @@ function Observer ({ reference }) {
                   </Box>
                 </div>
                 <div className="column is-4">
-                  <Box height="">
+                  <Box height={false}>
                     <BoxContent>
                       <BoxParagraph>
                         <p>Pression atmosphérique</p>

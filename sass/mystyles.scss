@@ -15,6 +15,11 @@ $hero-body-padding: 1rem 1rem;
     height: 100%;
 }
 
+.hoverable:hover {
+    opacity: 0.50;
+    transition: .5s ease;
+}
+    
 .justified-content {
     text-align: justify;
 }

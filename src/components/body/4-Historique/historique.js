@@ -134,21 +134,21 @@ function Historique ({ reference }) {
         <div className="container">
           <content className="content">
             <div className="columns">
-              <button className="column" onClick= {() => {
+              <button className="column button is-primary is-light is-small is-fullwidth is-rounded" onClick= {() => {
                 console.log(elementId);
                 setElementId((elementId === 0 ? (longueur - 1) : elementId - 1)); }
               } >
-                <Box>
-                  <BoxIcon icon="fas fa-arrow-left" />
-                </Box>
+                <span className="icon">
+                    <i className="fas fa-arrow-left fa-3x is-flex"></i>
+                </span>
               </button>
               {histo[elementId]}
-              <button className="column" onClick={ () => {
+              <button className="column button is-primary is-light is-small is-fullwidth is-rounded" onClick={ () => {
                 setElementId((elementId === (longueur - 1) ? 0 : elementId + 1)); }
               } >
-                <Box>
-                  <BoxIcon icon="fas fa-arrow-right" />
-                </Box>
+                <span className="icon">
+                    <i className="fas fa-arrow-right fa-3x is-flex"></i>
+                </span>
               </button>
             </div>
             {/* ancienne version: 

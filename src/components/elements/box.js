@@ -1,8 +1,15 @@
 import React from "react";
 
-function Box({ children, height=" heightMax" }) {
+function Box({ children, height=true, hoverable=false }) {
+    let classNames = "box";
+    if (height) {
+        classNames += " heightMax";
+    }
+    if (hoverable) {
+        classNames += " hoverable";
+    }
     return (
-        <div className={"box" + height}>
+        <div className={classNames}>
             <div className="columns">
                 {children}
             </div>

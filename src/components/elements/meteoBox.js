@@ -19,7 +19,7 @@ function MeteoBox () {
     }, [temperature, setTemperature]);
 
     return (
-        <Box height="">
+        <Box height={false}>
             <BoxContent>
                 <BoxTitle title="Météo Paris" />
                 <BoxImage src={icon} alt="icone météo" size="is-128x128"/>
